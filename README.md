@@ -53,7 +53,7 @@ COW React 5기 학습을 위한 리포지토리 입니다.
       <img src="https://avatars.githubusercontent.com/swgvenghy" width="100px" alt="멘토 최준호" style="border-radius: 20%;"/>
     </td>
     <td align="center" style="padding: 10px;">
-      <img src="https://avatars.githubusercontent.com/ujinsimSS" width="100px" alt="멘토 심유진" style="border-radius: 20%;"/>
+      <img src="https://avatars.githubusercontent.com/ujinsim" width="100px" alt="멘토 심유진" style="border-radius: 20%;"/>
     </td>
     <td align="center" style="padding: 10px;">
       <img src="https://avatars.githubusercontent.com/ChoiTheCreator" width="100px" alt="멘토 ChoiTheCreator" style="border-radius: 20%;"/>

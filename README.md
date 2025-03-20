@@ -61,9 +61,7 @@ COW React 5기 학습을 위한 리포지토리 입니다.
     <td align="center" style="padding: 10px;">
       <img src="https://avatars.githubusercontent.com/qwer0114" width="100px" alt="멘토 qwer0114" style="border-radius: 20%;"/>
     </td>
-    <td align="center" style="padding: 10px;">
-      <img src="https://avatars.githubusercontent.com/JangYEhoon00" width="100px" alt="멘토 JangYEhoon00" style="border-radius: 20%;"/>
-    </td>
+  
   </tr>
   <tr>
     <td align="center">
@@ -86,11 +84,7 @@ COW React 5기 학습을 위한 리포지토리 입니다.
         <strong>qwer0114</strong>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/JangYEhoon00">
-        <strong>JangYEhoon00</strong>
-      </a>
-    </td>
+   
   </tr>
 </table>
 

@@ -45,7 +45,7 @@ SSR은 Server Side Rendering의 약자로 서버에서 HTML을 완성한 후 클
 SSR은 초기 로딩과 SEO에 유리하지만 서버에 부하가 발생하고 인터랙션까지 시간이 필요하다
 
 
-SPA는 Single Page Application의 약자로 하나의 HTML 파일로 구성된 애플리케이션이며 클라이언트에서 필요한 부분만 동적으로 렌더링한다(단일 페이지지)
+SPA는 Single Page Application의 약자로 하나의 HTML 파일로 구성된 애플리케이션이며 클라이언트에서 필요한 부분만 동적으로 렌더링한다(단일 페이지)
 MPA는 Multi Page Application의 약자로 요청 시마다 서버에서 새로운 HTML 파일을 받아오는 방식이다
 
 SPA는 빠른 전환과 부드러운 UX를 제공하지만 SEO에 불리하고 MPA는 SEO에 강하지만 페이지 전환 시 깜빡임이 발생할 수 있다

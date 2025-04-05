@@ -12,10 +12,10 @@ props: 외부(부모)로부터 전달되는 데이터
 
 
 ### 각각의 사용 예시 JSX, state, props
-<!-- jsx : const element = <h1>Hello, React!</h1>; -->
-
-<!-- state : const [count, setCount] = useState(0); -->
-<!-- 
-props : function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-} -->
+# jsx : const element = <h1>Hello, React!</h1>;
+#
+# state : const [count, setCount] = useState(0);
+#
+# props : function Welcome(props) {
+#  return <h1>Hello, {props.name}</h1>;
+# }

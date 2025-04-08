@@ -1,10 +1,10 @@
 # 2주차 학습과제 
-## JSX, state, props.  
+### JSX, state, props.  
 JSX는 JavaScript 문법 안에서 HTML 태그를 사용할 수 있도록 하는 문법 확장으로 React 컴포넌트의 UI 구조를 선언적으로 표현할 수 있게 해줍니다.  
 state는 컴포넌트 내부에서 데이터를 관리하는 수단으로 사용자 입력이나 이벤트에 따라 동적으로 변경되는 값을 저장합니다.  
 props는 부모 컴포넌트로부터 자식 컴포넌트로 데이터를 전달하는 방법으로 컴포넌트 간의 재사용성과 유연성을 높이는 데 중요한 역할을 합니다.  
 
-# jsx state proprs가 왜 필요한가
+### jsx state proprs가 왜 필요한가
 jsx HTML과 비슷한 문법으로 UI 구조를 직관적으로 표현할 수 있음. React.createElement()보다 가독성이 좋음
 state 사용자와의 상호작용(클릭, 입력 등)에 따라 동적으로 UI를 변화시켜야 하기 때문에 필요함
 props 컴포넌트 간 데이터 전달을 통해 재사용성과 모듈화를 실현할 수 있음
@@ -53,7 +53,7 @@ function App() {
 }
 
 
-# jsx state props를 사용한 코드
+### jsx state props를 사용한 코드
 
 import { useState } from 'react';
 

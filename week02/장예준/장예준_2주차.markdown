@@ -4,9 +4,89 @@ JSX는 JavaScript 문법 안에서 HTML 태그를 사용할 수 있도록 하는
 state는 컴포넌트 내부에서 데이터를 관리하는 수단으로 사용자 입력이나 이벤트에 따라 동적으로 변경되는 값을 저장합니다.  
 props는 부모 컴포넌트로부터 자식 컴포넌트로 데이터를 전달하는 방법으로 컴포넌트 간의 재사용성과 유연성을 높이는 데 중요한 역할을 합니다.  
 
+# jsx state proprs가 왜 필요한가
+jsx HTML과 비슷한 문법으로 UI 구조를 직관적으로 표현할 수 있음. React.createElement()보다 가독성이 좋음
+state 사용자와의 상호작용(클릭, 입력 등)에 따라 동적으로 UI를 변화시켜야 하기 때문에 필요함
+props 컴포넌트 간 데이터 전달을 통해 재사용성과 모듈화를 실현할 수 있음
+
+###  jsx 특징
+JavaScript 안에서 HTML 태그 사용 가능
+Babel을 통해 React.createElement()로 변환됨
+하나의 최상위 태그로 감싸야 함
+class → className, for → htmlFor
+
+
+### jsx 예제코드
+function Greeting() {
+  return <h1>Hello, React!</h1>;
+}
+
+### state 특징
+컴포넌트의 동적인 상태를 관리
+값이 변경되면 컴포넌트가 자동으로 리렌더링됨
+주로 사용자 입력 버튼 클릭 등과 연결
+
+### state예제코드
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>현재 카운트: {count}</p>
+      <button onClick={() => setCount(count + 1)}>증가</button>
+    </div>
+  );
+}
+
+### props 특징
+부모 --> 자식 컴포넌트로 전달
+읽기 전용이며 자식 컴포넌트에서 직접 수정 불가
+다양한 데이터를 전달할 수 있어 재사용성과 유연성 향상
+
+### props 예제코드
+function Welcome(props) {
+  return <h2>안녕하세요, {props.name}님!</h2>;
+}
+function App() {
+  return <Welcome name="예준" />;
+}
+
+
+# jsx state props를 사용한 코드
+
+import { useState } from 'react';
+
+function WelcomeMessage({ name }) {
+  return <h2>환영합니다, {name}님!</h2>;
+}
+
+function Counter({ initialCount }) {
+  const [count, setCount] = useState(initialCount);
+  return (
+    <div>
+      <p>현재 카운트: {count}</p>
+      <button onClick={() => setCount(count + 1)}>+1</button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <WelcomeMessage name="예준" />
+      <Counter initialCount={5} />
+    </div>
+  );
+}
+
 ### 요약 정리
 JSX: UI 구조를 선언적으로 표현하는 문법
 state: 내부 상태 관리, 동적 데이터
 props: 외부(부모)로부터 전달되는 데이터
 이 셋은 함께 사용되어 컴포넌트 중심의 동적인 UI를 구성한다.
+
+### 공부를 하면서 꺠다른 점
+JSX, state, props는 각각 다른 기능을 가지고 있지만 
+위 기능들을 함께 사용한다면 좋은 시너지를 만들수 있다는 것을 느끼게 되었습니다다
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-// hook useState useEffect 사용할수 있는 클래스
-// useState는 컴포넌트에 state 변수를 추가 // 값을 저장 
-// useEffect는 외부 시스템과 컴포넌트를 동기화 // 
+// hook useState useEffect 사용할수 있는 클래스 
+// useState는 컴포넌트에 state 변수를 추가 // 값을 저장 // 내 코드에서 사용되는 useState는 input과 todos 두개의 state
+// useEffect는 외부 시스템과 컴포넌트를 동기화 // todo가 바뀔 떄마다 내용을 변경localStorage 자동으로 저장
 function App() {
   const [todos, setTodos] = useState(() => { // todo라는 state를 만들기 위해 useState를 사용함 
     // todo에는 할일의 목록이 저장됨 

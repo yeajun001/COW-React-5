@@ -33,6 +33,4 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
-}
-출처: https://kg-dlife.tistory.com/223 [감귤밭 호지차 농장:티스토리]
+  plugins: [],}

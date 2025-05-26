@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* postcss language support를 설치하니 에러가 사라졌습니다 */

@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import './index.css';
 
 function App() {
+  //1번 조건식 입니다다
   const [todos, setTodos] = useState(() => {
     const saved = localStorage.getItem('todos');
     return saved ? JSON.parse(saved) : [];
   });
   const [input, setInput] = useState('');
   useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos));
+    localStorage.setItem('todos', JSON.stringify(todos)); // 2번 3번 조건 식
   }, [todos]);
 
   const handleSubmit = (e) => {

@@ -33,5 +33,5 @@ app.post('/todos', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`서버가 실행됩니다 http://localhost:${port}`);
+  console.log(`서버가 실행 http://localhost:${port}`);
 });
